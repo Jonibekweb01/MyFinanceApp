@@ -1,0 +1,39 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 160px;
+}
+
+body {
+    margin-left: 150px;
+    background-color: white;
+}
+
+.list-unstyled {
+    display: flex;
+    flex-direction: column;
+    gap: 30px !important;
+    margin-left: 10px !important;
+}
+
+.dd {
+    margin-left: 10px !important;
+}
+
+.list-unstyled li a {
+    align-items: center;
+    font-size: 17px !important;
+    padding: 10px;
+    transition: 0.2s ease;
+}
+
+.list-unstyled li a:hover {
+    background-color: rgba(128, 128, 128, 0.158);
+    border-radius: 5px;
+}

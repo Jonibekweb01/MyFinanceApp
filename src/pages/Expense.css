@@ -1,0 +1,59 @@
+.expense-btn {
+    padding: 15px 25px;
+    border-radius: 7px;
+    font-weight: 500;
+    background: rgb(33 37 41) !important;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.expense-btn:hover {
+    background: rgb(41 45 50) !important;
+    cursor: pointer;
+}
+
+.expense-list {
+    margin-top: 10px;
+}
+
+#expensename {
+    color: rgb(41, 41, 56);
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.expense-list {
+    width: 100%;
+    border-collapse: collapse;
+    /* Ensures that borders between cells are merged */
+}
+
+.expense-list th,
+.expense-list td {
+    border: 1px solid #ddd;
+    /* Light gray border for cells */
+    padding: 8px;
+    /* Padding inside cells */
+    text-align: left;
+    /* Align text to the left */
+}
+
+.expense-list th {
+    background-color: rgb(41, 41, 56);
+    color: white;
+    /* Light gray background for headers */
+    font-weight: bold;
+    /* Make header text bold */
+}
+
+.expense-list tr:nth-child(even) {
+    background-color: #dedede;
+    /* Alternate row color for better readability */
+}
+
+.expense-list tr:hover {
+    background-color: #f1f1f1;
+    /* Highlight row on hover */
+}

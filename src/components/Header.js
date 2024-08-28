@@ -17,12 +17,10 @@ export const Header = memo(() => {
           className="d-flex align-items-center dd"
           style={{ marginBottom: "40px", marginLeft: "20px !important" }}
         >
-          {/* <img src={Logo} alt="Logo" width={40} /> */}
           <NavLink
             to={"/"}
             style={{ textDecoration: "none", marginLeft: "20px !important" }}
           >
-            {" "}
             <span
               className="text-white fs-4 ms-2"
               style={{ marginLeft: "20px !important" }}
@@ -38,56 +36,63 @@ export const Header = memo(() => {
           <div>
             <li>
               <NavLink
-                className="fs-5 text-white text-decoration-none d-flex gap-2"
+                exact
+                className="nav-link"
+                activeClassName="active"
                 to="/"
               >
-                <img width={25} src={Logo} alt="" />
+                <img width={25} src={Logo} alt="Dashboard" />
                 Dashboard
               </NavLink>
             </li>
             <li>
               <NavLink
-                className="fs-5 text-white text-decoration-none  d-flex gap-2"
+                className="nav-link"
+                activeClassName="active"
                 to="/expenses"
               >
-                <img width={25} src={Expenses} alt="" />
+                <img width={25} src={Expenses} alt="Expenses" />
                 Expenses
               </NavLink>
             </li>
             <li>
               <NavLink
-                className="fs-5 text-white text-decoration-none d-flex gap-2"
+                className="nav-link"
+                activeClassName="active"
                 to="/budgeting"
               >
-                <img width={25} src={Budget} alt="" />
+                <img width={25} src={Budget} alt="Budgeting" />
                 Budgeting
               </NavLink>
             </li>
             <li>
               <NavLink
-                className="fs-5 text-white text-decoration-none d-flex gap-2"
+                className="nav-link"
+                activeClassName="active"
                 to="/goals"
               >
-                <img width={25} src={Goals} alt="" />
+                <img width={25} src={Goals} alt="Goals" />
                 Goals
               </NavLink>
             </li>
             <li>
               <NavLink
-                className="fs-5 text-white text-decoration-none d-flex gap-2"
+                className="nav-link"
+                activeClassName="active"
                 to="/reports"
               >
-                <img width={25} src={Reports} alt="" />
+                <img width={25} src={Reports} alt="Reports" />
                 Reports
               </NavLink>
             </li>
           </div>
           <li>
             <NavLink
-              className="fs-5 text-white text-decoration-none d-flex gap-2"
+              className="nav-link"
+              activeClassName="active"
               to="/profile"
             >
-              <img width={25} src={Profile} alt="" />
+              <img width={25} src={Profile} alt="Profile" />
               Profile
             </NavLink>
           </li>
